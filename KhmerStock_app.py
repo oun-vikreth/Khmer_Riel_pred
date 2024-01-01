@@ -15,6 +15,8 @@ data = data.set_index('Date')
 def main():
     st.title("Khmer(riel) Stock Price Prediction")
 
+    st.markdown("[Project source code](https://github.com/oun-vikreth/Khmer_Riel_pred)")
+
     # Add sidebar for date range input
     st.sidebar.subheader("Select date range")
     start_date = st.sidebar.date_input("Start date", data.index.min())
